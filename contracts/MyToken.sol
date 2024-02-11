@@ -33,7 +33,7 @@ contract MyToken is ERC20, ERC20Burnable, ERC20Pausable, Ownable, ERC20Permit {
         override(ERC20, ERC20Pausable)
     {
         if (from != address(0)){
-            require(value <= 100,"value is too more!");
+            require(value <= 100,"value is too more!!!");
         }
         super._update(from, to, value);
     }
